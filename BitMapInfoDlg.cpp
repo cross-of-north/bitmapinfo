@@ -735,7 +735,8 @@ void CBitMapInfoDlg::Skip(CFile & f, BITMAPFILEHEADER & hdr)
 	 CString data;
 	 DWORD start = offset;
 	 start &= ~0xF; // zero out to 16-byte boundary
-	 for(DWORD i = start; i < offset; i++)
+	 DWORD i;
+	 for(i = start; i < offset; i++)
 	    { /* pad left */
 	     data += _T(".. ");
 	    } /* pad left */

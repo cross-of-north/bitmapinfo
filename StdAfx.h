@@ -12,7 +12,7 @@
 
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 
-#define WINVER 0x500    // force V5 stuff from headers
+//#define WINVER 0x500    // force V5 stuff from headers
 #include <afxwin.h>         // MFC core and standard components
 #include <afxext.h>         // MFC extensions
 #include <afxdisp.h>        // MFC Automation classes

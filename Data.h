@@ -28,7 +28,7 @@ class BitmapData : public BitmapDisplayInfo {
        typedef enum { CLIP_CLEAR = -1, CLIP_LEFT, CLIP_NONE, CLIP_RIGHT } CLIPTYPE;
        void SetClip(CLIPTYPE clip, int x = 0);
     protected:
-       virtual GetFieldWidth() { return 4; }
+       virtual int GetFieldWidth() { return 4; }
        CArray<BYTE, BYTE> data;
        int padding;
        int width;
@@ -194,7 +194,7 @@ class Bitmap1 : public BitmapP {
 
     protected:
        virtual ~Bitmap1() { palette->Release(); }
-       virtual GetFieldWidth() { return 1; }
+       virtual int GetFieldWidth() { return 1; }
 };
 
 /*****************************************************************************
@@ -218,5 +218,5 @@ class Bitmap4 : public BitmapP {
 
     protected:
        virtual ~Bitmap4() { palette->Release(); }
-       virtual GetFieldWidth() { return 2; }
+       virtual int GetFieldWidth() { return 2; }
 };

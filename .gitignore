@@ -1,0 +1,6 @@
+Debug
+.vs
+*.aps
+*.sdf
+*.suo
+/BitMapInfo.vcxproj.user
